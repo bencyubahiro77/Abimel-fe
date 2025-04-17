@@ -4,16 +4,16 @@ const Home = () => {
       {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center mb-8">
         <img
-          src="https://image.doba.com/dg7-agChDKEyQYbe/hollow-teardrop-shape-with-sparkling-zircon-decor-dangle-earrings-elegant-luxury-style-copper-silver-plated-jewelry-daily-casual.webp"
+          src="https://www.shutterstock.com/image-photo/gold-jewelry-bracelet-on-woman-600nw-2465653819.jpg"
           alt="home"
-          className="rounded-t-full object-cover w-[370px] sm:w-[360px] md:w-[500px] lg:w-[480px] h-[380px] sm:h-[460px] md:h-[500px] lg:h-[550px] transition-all duration-300"
+          className="rounded-t-full object-cover w-[370px] sm:w-[360px] md:w-[600px] lg:w-[420px] h-[380px] sm:h-[460px]  md:h-[600px] lg:h-[450px] transition-all duration-300"
         />
       </div>
 
       {/* Text Section */}
       <div className="w-full lg:w-1/2 text-center lg:text-left px-4 sm:px-8 md:px-12 pb-8">
-        <h1 className="text-[42px] sm:text-[52px] md:text-[58px] lg:text-[72px] font-playfair leading-tight -tracking-tighter mb-6">
-          Lifetime<br />Jewelry
+        <h1 className="text-[32px] sm:text-[52px] md:text-[40px] font-playfair leading-tight -tracking-tighter mb-6">
+          Lifetime Jewelry
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 font-light -tracking-tighter">
           Remarkable Jewelry for the modern people
