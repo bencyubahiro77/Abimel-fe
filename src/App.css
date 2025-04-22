@@ -1,5 +1,101 @@
 @import "tailwindcss";
 
 .font-playfair {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
+}
+
+.testimonial-container {
+  position: relative;
+  padding: 20px;
+  transition: border-color 0.3s;
+  height: 40vh;
+  background-image: url(https://www.inkandironcts.com/images2/banner-17.jpg);
+  opacity: 1;
+  display: block;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+
+.testimonial-container.hovered {
+  border-color: #333;
+}
+
+.testimonial-title {
+  padding-top: 5%;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-family: serif;
+}
+
+.testimonial-content {
+  padding-top: 3%;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Open Sans", arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  width:50%;
+  margin-left: 25%;
+  letter-spacing: 1px;
+}
+
+.testimonial-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 97.5%;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.previous-icon,
+.next-icon {
+  cursor: pointer;
+  font-size: 25px;
+}
+@media (max-width: 425px) {
+  .testimonial-title {
+    padding-top: 15%;
   }
+  .testimonial-content {
+   width: 100%;
+   margin: 0;
+   padding-top: 15%;
+   font-size: 15px;
+  }
+  .testimonial-navigation {
+   display: grid;
+   width: 50%;
+   top: 35%;
+   margin-left: 40%;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
+  .testimonial-title {
+    padding-top: 15%;
+  }
+  .testimonial-content {
+   width: 100%;
+   margin: 0;
+   padding-top: 5%;
+  }
+}
+@media (min-width: 779px) and (max-width: 991px) {
+  .testimonial-title {
+    padding-top: 15%;
+  }
+  .testimonial-content {
+   width: 100%;
+   margin: 0;
+   padding-top: 5%;
+  }
+  .testimonial-container {
+    height: 30vh;
+  }
+}
