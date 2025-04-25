@@ -1,7 +1,6 @@
 const Home = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-evenly lg:space-between min-h-screen bg-gradient-to-tr from-black via-[#1c1c1c] to-[#015516] text-white px-6 pt-20 lg:px-16 relative overflow-hidden">
-      {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center mb-8">
         <img
           src="https://www.shutterstock.com/image-photo/gold-jewelry-bracelet-on-woman-600nw-2465653819.jpg"
@@ -10,12 +9,11 @@ const Home = () => {
         />
       </div>
 
-      {/* Text Section */}
       <div className="w-full lg:w-1/2 text-center lg:text-left px-4 sm:px-8 md:px-12 pb-8">
-        <h1 className="text-[32px] sm:text-[52px] md:text-[40px] font-playfair leading-tight -tracking-tighter mb-6">
+        <h1 className="text-[32px] sm:text-[52px] md:text-[40px] font-arial leading-tight -tracking-tighter mb-6">
           Lifetime Jewelry
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 font-light -tracking-tighter">
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 font-light -tracking-tighter ">
           Remarkable Jewelry for the modern people
         </p>
         <button className="bg-yellow-500 text-black px-6 py-3 rounded-xl  font-semibold transition tracking-wide">

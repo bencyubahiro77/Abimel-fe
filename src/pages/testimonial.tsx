@@ -68,10 +68,10 @@ export default function TestimonialsCarousel() {
   return (
     <div className="flex flex-col items-center justify-center w-full px-8 py-8  bg-white ">
       <div className="text-center mb-12">
-        <h1 className=" text-[23px] sm:text-[35px] md:text-[40px] font-extrabold font-playfair leading-snug tracking-tight text-gray-900">
+        <h1 className=" text-[23px] sm:text-[35px] md:text-[40px] font-semibold font-arial leading-snug tracking-tight text-gray-900">
           What Clients Say
         </h1>
-        <div className="w-20 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
+        <div className="w-13 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
       </div>
 
       <div className="w-full overflow-hidden">
@@ -109,7 +109,7 @@ export default function TestimonialsCarousel() {
                       <AvatarImage src={t.image} alt={t.name} className="object-cover"/>
                       <AvatarFallback>{t.name[0]}</AvatarFallback>
                     </Avatar>
-                    <div className="text-sky-600 font-semibold text-lg">{t.name}</div>
+                    <div className=" text-green-700 font-bold text-lg">{t.name}</div>
                     <p className="text-muted-foreground italic text-sm max-w-md overflow-hidden text-ellipsis">
                       “ {t.comment} ”
                     </p>
@@ -127,7 +127,7 @@ export default function TestimonialsCarousel() {
               onClick={() => setActiveIndex(i)}
               className={cn(
                 "h-3 w-3 rounded-full cursor-pointer transition-all",
-                i === activeIndex ? "bg-sky-600 scale-110" : "bg-gray-300"
+                i === activeIndex ? "bg-green-700 scale-110" : "bg-gray-300"
               )}
             ></span>
           ))}
