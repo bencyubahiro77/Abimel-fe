@@ -1,7 +1,12 @@
-const Product = () =>{
+const Product = () => {
   return (
     <div>
-           <h1 className="uppercase text-[32px] sm:text-[52px] md:text-[40px] font-playfair leading-tight -tracking-tighter text-center">Our Product</h1>
+      <div className="text-center mb-12">
+      <h1 className=" text-[23px] sm:text-[35px] md:text-[40px] font-extrabold font-playfair leading-snug tracking-tight text-gray-900">
+          Our Product
+        </h1>
+        <div className="w-20 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
+      </div>
     </div>
   )
 }
