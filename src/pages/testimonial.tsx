@@ -44,29 +44,37 @@ const testimonials = [
 
 export default function TestimonialsCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(1);
   const cardContainerRef = useRef(null);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % testimonials.length);
     }, 4000);
     return () => clearInterval(interval);
+  }, [testimonials.length]);
+  
+  useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth >= 1280) {
+        setVisibleCards(3);
+      } else if (window.innerWidth >= 768) {
+        setVisibleCards(2);
+      } else {
+        setVisibleCards(1);
+      }
+    };
+  
+    updateVisibleCards(); // Initial call
+    window.addEventListener("resize", updateVisibleCards);
+  
+    return () => window.removeEventListener("resize", updateVisibleCards);
   }, []);
 
-  const getVisibleCards = () => {
-    if (typeof window !== "undefined") {
-      if (window.innerWidth >= 1280) return 3; // Large screens
-      if (window.innerWidth >= 768) return 2; // Medium screens 
-      return 1; // Small screens
-    }
-    return 1;
-  };
-
-  const visibleCards = getVisibleCards();
   const half = Math.floor(visibleCards / 2);
-
+  
   return (
-    <div className="flex flex-col items-center justify-center w-full px-8 py-8  bg-white ">
+    <div className="flex flex-col items-center justify-center w-full px-8 py-8 bg-white ">
       <div className="text-center mb-12">
         <h1 className=" text-[23px] sm:text-[35px] md:text-[40px] font-semibold font-arial leading-snug tracking-tight text-gray-900">
           What Clients Say
@@ -97,7 +105,7 @@ export default function TestimonialsCarousel() {
                   className={cn(
                     "text-center py-6 px-4 transition-all duration-500 relative", 
                     isCenter ? "opacity-100 scale-100" : "opacity-60 scale-95",
-                    "h-80" // Increased the height of the card
+                    "h-80" 
                   )}
                 >
                   <div

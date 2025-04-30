@@ -48,35 +48,43 @@ const Contact = () => {
         {/* Contact Information Section */}
 
         <div className="flex flex-col gap-6 w-full lg:w-1/3">
-          <div className="text-gray-700">
-            <div className="flex items-center gap-4 mt-4">
-              <FaPhone className="text-xl text-gray-900 rotate-90" />
-              <div>
-                <p className="text-sm">+123 456 7890</p>
-                <p className="text-sm">+987 654 3210</p>
+          <div className="text-gray-700 flex justify-between">
+            <div>
+              <div className="flex items-center gap-4 mt-4">
+                <FaPhone className="text-xl text-gray-900 rotate-90" />
+                <div>
+                  <p className="text-sm">+123 456 7890</p>
+                  <p className="text-sm">+987 654 3210</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <FaEnvelope className="text-2xl text-gray-900" />
+                <p className="text-sm">contact@abimeljewelry.com</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 mt-4">
-              <FaEnvelope className="text-2xl text-gray-900" />
-              <p className="text-sm">contact@abimeljewelry.com</p>
-            </div>
+
             <div className="flex gap-4 mt-6">
-              <div className="w-8 h-8 bg-black flex items-center justify-center ">
-                <FaInstagram className="text-white " />
+              <div>
+                <div className="w-8 h-8 bg-black flex items-center justify-center mb-2 ">
+                  <FaInstagram className="text-white " />
+                </div>
+                <div className="w-8 h-8 bg-black flex items-center justify-center">
+                  <FaFacebook className="text-white" />
+                </div>
               </div>
-              <div className="w-8 h-8 bg-black flex items-center justify-center">
-                <FaFacebook className="text-white" />
-              </div>
-              <div className="w-8 h-8 bg-black flex items-center justify-center ">
-                <FaTiktok className="text-white" />
-              </div>
-              <div className="w-8 h-8 bg-black flex items-center justify-center ">
-                <FaTwitter className="text-white" />
+              <div>
+                <div className="w-8 h-8 bg-black flex items-center justify-center mb-2 ">
+                  <FaTiktok className="text-white" />
+                </div>
+                <div className="w-8 h-8 bg-black flex items-center justify-center ">
+                  <FaTwitter className="text-white" />
+                </div>
               </div>
             </div>
+
           </div>
           {/* Google Map Section */}
-          <div className="w-full h-92 bg-gray-200 relative">
+          <div className="w-full h-93 bg-gray-200 relative">
             <iframe
               className="absolute top-0 left-0 w-full h-full border-0"
               loading="lazy"
