@@ -29,7 +29,7 @@ const Product = () => {
     );
   };
   return (
-    <div>
+    <div className="bg-white">
       <div className="text-center mb-12">
         <h1 className=" text-[23px] sm:text-[35px] md:text-[40px] font-semibold font-arial leading-snug tracking-tight text-gray-900">
           Our Product

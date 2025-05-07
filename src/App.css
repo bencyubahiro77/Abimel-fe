@@ -7,6 +7,16 @@
   font-family: 'Playfair Display', serif;
 }
 
+@layer utilities {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .ipad2 {
+      min-height: fit-content;
+      padding-top: 15%;
+    }
+  }
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
