@@ -3,7 +3,7 @@ const About = () => {
         <div className="bg-white">
             <div className=" flex flex-col lg:flex-row justify-evenly pt-[5%] pb-[7%] border-b border-gray-500 mx-[5%]">
                 <p className="text-[20px] lg:w-[30%] text-gray-500 font-light leading-relaxed tracking-wide font-sans mb-4">
-                    Beauty is who you are. Jewelry is simply the icing on the cake.
+                    Beauty is who you are. Jewelry is Simply the icing on the cake.
                     <br />
                     <br />
                     - Misty Burgess
